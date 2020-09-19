@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Web Suite" duration-ms="261614" started-at="2020-09-19T09:53:04Z" finished-at="2020-09-19T09:57:26Z">
+    <groups>
+      <group name="SanityTest">
+        <method signature="AppTest.verifyTitle()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="verifyTitle" class="com.fullstack.batch3.AppTest"/>
+      </group> <!-- SanityTest -->
+      <group name="RegressionTest">
+        <method signature="AppTest.loginWithCorrectCredentials()[pri:1, instance:com.fullstack.batch3.AppTest@548b7f67]" name="loginWithCorrectCredentials" class="com.fullstack.batch3.AppTest"/>
+      </group> <!-- RegressionTest -->
+    </groups>
+    <test name="Web Tests" duration-ms="261614" started-at="2020-09-19T09:53:04Z" finished-at="2020-09-19T09:57:26Z">
+      <class name="com.fullstack.batch3.AppTest">
+        <test-method status="PASS" signature="setUpAndInitialize()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="setUpAndInitialize" is-config="true" duration-ms="17505" started-at="2020-09-19T09:53:04Z" finished-at="2020-09-19T09:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAndInitialize -->
+        <test-method status="PASS" signature="setUpAndInitialize()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="setUpAndInitialize" is-config="true" duration-ms="29938" started-at="2020-09-19T09:53:04Z" finished-at="2020-09-19T09:53:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAndInitialize -->
+        <test-method status="PASS" signature="setUpAndInitialize()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="setUpAndInitialize" is-config="true" duration-ms="17505" started-at="2020-09-19T09:53:04Z" finished-at="2020-09-19T09:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAndInitialize -->
+        <test-method status="PASS" signature="setUpAndInitialize()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="setUpAndInitialize" is-config="true" duration-ms="17505" started-at="2020-09-19T09:53:04Z" finished-at="2020-09-19T09:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAndInitialize -->
+        <test-method status="PASS" signature="testJSScript()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="testJSScript" duration-ms="5094" started-at="2020-09-19T09:53:22Z" finished-at="2020-09-19T09:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJSScript -->
+        <test-method status="PASS" signature="testSwitches()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="testSwitches" duration-ms="7783" started-at="2020-09-19T09:53:22Z" finished-at="2020-09-19T09:53:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitches -->
+        <test-method status="PASS" signature="testNavigation()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="testNavigation" duration-ms="36457" started-at="2020-09-19T09:53:22Z" finished-at="2020-09-19T09:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigation -->
+        <test-method status="PASS" signature="cleanUpActivities(org.testng.ITestResult)[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="cleanUpActivities" is-config="true" duration-ms="1714" started-at="2020-09-19T09:53:27Z" finished-at="2020-09-19T09:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testJSScript status=SUCCESS method=AppTest.testJSScript()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method status="PASS" signature="cleanUpActivities(org.testng.ITestResult)[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="cleanUpActivities" is-config="true" duration-ms="1744" started-at="2020-09-19T09:53:29Z" finished-at="2020-09-19T09:53:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSwitches status=SUCCESS method=AppTest.testSwitches()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method status="FAIL" signature="verifyTitle()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="verifyTitle" duration-ms="93367" started-at="2020-09-19T09:53:34Z" description="Verify that the title of website is correct" finished-at="2020-09-19T09:55:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Home -] but found [Log In ‹ — WordPress]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Home -] but found [Log In ‹ — WordPress]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.fullstack.batch3.AppTest.verifyTitle(AppTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="cleanUpActivities(org.testng.ITestResult)[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="cleanUpActivities" is-config="true" duration-ms="1871" started-at="2020-09-19T09:53:58Z" finished-at="2020-09-19T09:54:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNavigation status=SUCCESS method=AppTest.testNavigation()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method status="PASS" signature="cleanUpActivities(org.testng.ITestResult)[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="cleanUpActivities" is-config="true" duration-ms="62341" started-at="2020-09-19T09:55:08Z" finished-at="2020-09-19T09:56:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitle status=FAILURE method=AppTest.verifyTitle()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+        <test-method status="PASS" signature="setUpAndInitialize()[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="setUpAndInitialize" is-config="true" duration-ms="7136" started-at="2020-09-19T09:56:10Z" finished-at="2020-09-19T09:56:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAndInitialize -->
+        <test-method status="FAIL" signature="loginWithCorrectCredentials()[pri:1, instance:com.fullstack.batch3.AppTest@548b7f67]" name="loginWithCorrectCredentials" duration-ms="66318" started-at="2020-09-19T09:56:17Z" description="Verify that login is working correctly with correct username and password" finished-at="2020-09-19T09:57:23Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Log In')] (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Log In')] (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.lambda$checkConditionInLoop$2(FluentWait.java:255)
+at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)
+at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Log In')]"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-6GEIVGO', ip: '169.254.81.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cfe07f5dce4494806e72ac035387ed48
+*** Element info: {Using=xpath, value=//a[contains(text(),'Log In')]}
+at sun.reflect.GeneratedConstructorAccessor49.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+at org.openqa.selenium.support.ui.FluentWait.lambda$checkConditionInLoop$2(FluentWait.java:233)
+... 6 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCorrectCredentials -->
+        <test-method status="PASS" signature="cleanUpActivities(org.testng.ITestResult)[pri:0, instance:com.fullstack.batch3.AppTest@548b7f67]" name="cleanUpActivities" is-config="true" duration-ms="2389" started-at="2020-09-19T09:57:23Z" finished-at="2020-09-19T09:57:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithCorrectCredentials status=FAILURE method=AppTest.loginWithCorrectCredentials()[pri:1, instance:com.fullstack.batch3.AppTest@548b7f67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpActivities -->
+      </class> <!-- com.fullstack.batch3.AppTest -->
+    </test> <!-- Web Tests -->
+  </suite> <!-- Web Suite -->
+</testng-results>
